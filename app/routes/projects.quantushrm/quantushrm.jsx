@@ -1,27 +1,28 @@
-import backgroundSprLarge from '~/assets/spr-background-large.jpg';
+import hrmConfigs from '~/assets/quantushrm4.png'
+import backgroundSprLarge from '~/assets/office.jpg';
 import backgroundSprPlaceholder from '~/assets/spr-background-placeholder.jpg';
-import imageSprBackgroundVolcanismLarge from '~/assets/spr-background-volcanism-large.jpg';
-import imageSprBackgroundVolcanismPlaceholder from '~/assets/spr-background-volcanism-placeholder.jpg';
-import imageSprBackgroundVolcanism from '~/assets/spr-background-volcanism.jpg';
-import backgroundSpr from '~/assets/spr-background.jpg';
-import imageSprComponentsDarkLarge from '~/assets/spr-components-dark-large.png';
+import imageSprBackgroundVolcanismLarge from '~/assets/office.jpg';
+import imageSprBackgroundVolcanismPlaceholder from '~/assets/office.jpg';
+import imageSprBackgroundVolcanism from '~/assets/office.jpg';
+import backgroundSpr from '~/assets/office.jpg';
+import imageSprComponentsDarkLarge from '~/assets/quantushrm2.png';
 import imageSprComponentsDarkPlaceholder from '~/assets/spr-components-dark-placeholder.png';
-import imageSprComponentsDark from '~/assets/spr-components-dark.png';
-import imageSprComponentsLightLarge from '~/assets/spr-components-light-large.png';
+import imageSprComponentsDark from '~/assets/quantushrm2.png';
+import imageSprComponentsLightLarge from '~/assets/quantushrm2.png';
 import imageSprComponentsLightPlaceholder from '~/assets/spr-components-light-placeholder.png';
-import imageSprComponentsLight from '~/assets/spr-components-light.png';
-import imageSprDesignSystemDarkLarge from '~/assets/spr-design-system-dark-large.png';
-import imageSprDesignSystemDarkPlaceholder from '~/assets/spr-design-system-dark-placeholder.png';
-import imageSprDesignSystemDark from '~/assets/spr-design-system-dark.png';
-import imageSprDesignSystemLightLarge from '~/assets/spr-design-system-light-large.png';
-import imageSprDesignSystemLightPlaceholder from '~/assets/spr-design-system-light-placeholder.png';
-import imageSprDesignSystemLight from '~/assets/spr-design-system-light.png';
-import imageSprLessonBuilderDarkLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
-import imageSprLessonBuilderDarkPlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
+import imageSprComponentsLight from '~/assets/quantushrm2.png';
+import imageSprDesignSystemDarkLarge from '~/assets/quantushrm3.png';
+import imageSprDesignSystemDarkPlaceholder from '~/assets/quantushrm3.png';
+import imageSprDesignSystemDark from '~/assets/quantushrm3.png';
+import imageSprDesignSystemLightLarge from '~/assets/quantushrm3.png';
+import imageSprDesignSystemLightPlaceholder from '~/assets/quantushrm3.png';
+import imageSprDesignSystemLight from '~/assets/quantushrm3.png';
+import imageSprLessonBuilderDarkLarge from '~/assets/quantushrm1.png';
+import imageSprLessonBuilderDarkPlaceholder from '~/assets/quantushrm1.png';
 import imageSprLessonBuilderDark from '~/assets/spr-lesson-builder-dark.jpg';
-import imageSprLessonBuilderLightLarge from '~/assets/spr-lesson-builder-light-large.jpg';
+import imageSprLessonBuilderLightLarge from '~/assets/quantushrm1.png';
 import imageSprLessonBuilderLightPlaceholder from '~/assets/spr-lesson-builder-light-placeholder.jpg';
-import imageSprLessonBuilderLight from '~/assets/spr-lesson-builder-light.jpg';
+import imageSprLessonBuilderLight from '~/assets/quantushrm1.png';
 import videoSprMotionLarge from '~/assets/spr-motion-large.mp4';
 import videoSprMotionPlaceholder from '~/assets/spr-motion-placeholder.jpg';
 import videoSprMotion from '~/assets/spr-motion.mp4';
@@ -106,7 +107,7 @@ export const quantushrm = () => {
         <ProjectHeader
           title={title}
           description={description}
-          url="https://www.quantushrm.com/"
+          url="https://v2-test.medicubes.app/home"
           roles={roles}
         />
         <ProjectSection padding="top">
@@ -127,21 +128,15 @@ export const quantushrm = () => {
                   : imageSprLessonBuilderLightPlaceholder
               }
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
-              alt="The aero lesson builder app dragging an audio component into a screen about plant cells."
+              alt="ERP-development-hrm."
             />
           </ProjectSectionContent>
         </ProjectSection>
         <ProjectSection>
           <ProjectTextRow>
-            <ProjectSectionHeading>The problem</ProjectSectionHeading>
+            <ProjectSectionHeading>The Story</ProjectSectionHeading>
             <ProjectSectionText>
-              In 2017, Smart Sparrow began a project to build an entirely new platform to
-              from the ground up to serve as the most powerful tool for educators to
-              create online learning experiences. The old platform was built in Flash, and
-              there were a number of user experience problems to solve in the process of
-              moving the platform to Javascript. The primary goals for the project were
-              reducing barriers to collaboration, and making the platform both easier for
-              new users, but with plenty of room to scale for advanced users.
+              In 2025, QuantusHRM undertook a major platform overhaul, migrating from AngularJS and .NET MVC to Angular v18 and .NET 8. The goal was to rebuild the system from the ground up to deliver a faster, more scalable, and intuitive HRM experience. Key objectives included improving user experience, reducing friction for new users, and providing advanced features that could scale with organizational needs.
             </ProjectSectionText>
           </ProjectTextRow>
         </ProjectSection>
@@ -161,26 +156,14 @@ export const quantushrm = () => {
                   ? imageSprComponentsDarkPlaceholder
                   : imageSprComponentsLightPlaceholder
               }
-              alt={`A set of ${theme} themed components for the aero design system`}
+              alt={`Employee-management`}
               sizes="100vw"
             />
+           
             <ProjectTextRow>
-              <SegmentedControl
-                currentIndex={themes.indexOf(theme)}
-                onChange={handleThemeChange}
-              >
-                <SegmentedControlOption>Dark theme</SegmentedControlOption>
-                <SegmentedControlOption>Light theme</SegmentedControlOption>
-              </SegmentedControl>
-            </ProjectTextRow>
-            <ProjectTextRow>
-              <ProjectSectionHeading>The aero design system</ProjectSectionHeading>
+              <ProjectSectionHeading>Extensive Employee Management</ProjectSectionHeading>
               <ProjectSectionText>
-                To streamline the design process across designers and engineers for such a
-                large project, it was important to lay the foundations with a strong,
-                flexible design system that could evolve during the product’s development
-                cycle. This would inform both the aesthetics and user experience across
-                the product itself as well as the website and marketing material.
+                To streamline HR processes and provide a cohesive experience for both employees and administrators, QuantusHRM was designed with comprehensive employee management in mind. The system covers personal and employment information, leave and attendance tracking, salary and benefits, employee documents and letters, financial records, and career outlook, ensuring that all critical HR data is organized, accessible, and actionable across the platform.
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
@@ -202,16 +185,13 @@ export const quantushrm = () => {
                   ? imageSprDesignSystemDarkPlaceholder
                   : imageSprDesignSystemLightPlaceholder
               }
-              alt="The homepage of the aero design system docs website linking to principles and components."
+              alt="payroll-management"
               sizes="100vw"
             />
             <ProjectTextRow>
-              <ProjectSectionHeading>Design system docs</ProjectSectionHeading>
+              <ProjectSectionHeading>Payroll Management</ProjectSectionHeading>
               <ProjectSectionText>
-                A design system is useless if no one knows how to use it, so we put
-                together a comprehensive documentation website to cover principles, ux,
-                accessibility, and component guidelines for designers and engineers
-                working with the system.
+                To simplify and automate compensation processes, QuantusHRM’s payroll management system centralizes salary calculations, deductions, bonuses, and benefits administration. It ensures accuracy, compliance, and timely disbursements, while providing detailed reports and insights to help organizations make informed financial decisions.
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
@@ -225,7 +205,7 @@ export const quantushrm = () => {
                 width={1280}
                 height={900}
                 placeholder={imageSprBackgroundVolcanismPlaceholder}
-                alt="A dramatic ocean scene with lava forming a new land mass."
+                alt="HRM"
                 sizes="100vw"
               />
             }
@@ -233,19 +213,16 @@ export const quantushrm = () => {
             <ProjectSectionColumns width="full">
               <ProjectSectionContent width="full">
                 <ProjectTextRow width="s">
-                  <ProjectSectionHeading>Motion design</ProjectSectionHeading>
+                  <ProjectSectionHeading>HRM Configurators</ProjectSectionHeading>
                   <ProjectSectionText>
-                    Animation was a core principle in making the authoring experience a
-                    more understandable process. Elements animate in ways that indicate
-                    the cause and effect of each interaction to improve the fluidity of
-                    the overall experience.
+                   QuantusHRM provides a comprehensive suite of HRM configurators, allowing organizations to customize workflows, policies, and processes. This flexibility ensures the platform adapts seamlessly to diverse business needs and evolving HR requirements.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </ProjectSectionContent>
               <Image
                 raised
                 className={styles.video}
-                srcSet={`${videoSprMotion} 1280w, ${videoSprMotionLarge} 2560w`}
+                srcSet={`${hrmConfigs} 1280w, ${hrmConfigs} 2560w`}
                 width={1280}
                 height={800}
                 placeholder={videoSprMotionPlaceholder}
@@ -255,7 +232,7 @@ export const quantushrm = () => {
             </ProjectSectionColumns>
           </ProjectSection>
         </ThemeProvider>
-        <ProjectSection>
+        {/* <ProjectSection>
           <ProjectSectionContent>
             <ProjectTextRow>
               <ProjectSectionHeading>Encouraging adaptivity</ProjectSectionHeading>
@@ -549,7 +526,7 @@ export const quantushrm = () => {
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
-        </ProjectSection>
+        </ProjectSection> */}
       </ProjectContainer>
       <Footer />
     </>
