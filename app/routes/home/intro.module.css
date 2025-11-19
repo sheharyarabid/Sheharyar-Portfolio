@@ -32,6 +32,9 @@
     top: calc(var(--spaceM) * -1);
   }
 }
+.primaryText {
+   color: var(--primary);
+}
 
 .name {
   text-transform: uppercase;

@@ -71,6 +71,8 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
             <header className={styles.text}>
               <h1 className={styles.name} data-visible={visible} id={titleId}>
                 <DecoderText text={config.name} delay={500} />
+                <span className={styles.primaryText}>-</span>
+                <DecoderText text={config.nameUrdu} delay={500}/>
               </h1>
               <Heading level={0} as="h2" className={styles.title}>
                 <VisuallyHidden className={styles.label}>
@@ -99,11 +101,11 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                           aria-hidden
                           ref={nodeRef}
                           className={styles.word}
-                          data-plus={true}
+                          // data-plus={true}
                           data-status={status}
                           style={cssProps({ delay: tokens.base.durationL })}
                         >
-                          {item}
+                          <span className={styles.primaryText}>~</span> {item}
                         </span>
                       )}
                     </Transition>
