@@ -46,15 +46,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
             <div className={styles.column}>
               <ProfileText visible={visible} titleId={titleId} />
              <PillButtons/>
-              <Button
-                secondary
-                className={styles.button}
-                data-visible={visible}
-                href="/contact"
-                icon="send"
-              >
-                Send me a message
-              </Button>
+              
             </div>
             <div className={styles.column}>
               <div className={styles.tag} aria-hidden>
