@@ -3,7 +3,7 @@
   justify-content: center;
   gap: 16px; /* spacing between buttons */
   flex-wrap: wrap;
-  padding: 10px 0;
+  padding: 12px 0;
 }
 
 .button {
@@ -17,9 +17,25 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s, opacity 0.3s;
+  transition: all 0.3s ease; /* smooth hover transition */
+  position: relative;
+  background-color: transparent; /* keep color neutral */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* subtle shadow */
 }
 
 .button:hover {
-  opacity: 0.8; /* simple hover effect without adding color */
+  transform: translateY(-2px); /* slight lift effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* stronger shadow on hover */
+  opacity: 0.95;
+}
+
+.button span.externalIcon {
+  font-size: 1rem;
+  margin-left: 0.5rem; /* spacing from text */
+  vertical-align: top;
+  transition: transform 0.3s ease;
+}
+
+.button:hover span.externalIcon {
+  transform: translateY(-2px) scale(1.1); /* subtle icon animation on hover */
 }

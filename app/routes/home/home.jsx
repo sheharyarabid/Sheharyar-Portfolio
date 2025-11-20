@@ -24,6 +24,7 @@ import { useEffect, useRef, useState } from 'react';
 import config from '~/config.json';
 import styles from './home.module.css';
 import ButtonGrid from '~/components/ButtonGrid/ButtonGrid'
+import ExperienceTimeline from '~/components/experience/experience';
 // Prefetch draco decoader wasm
 export const links = () => {
   return [
@@ -122,6 +123,9 @@ export const Home = () => {
         visible={visibleSections.includes(details.current)}
         id="details"
       />
+     <div id="Experience">
+       <ExperienceTimeline/>
+     </div>
         {/* Project 1 */}
     <ProjectSummary
       id="project-1"

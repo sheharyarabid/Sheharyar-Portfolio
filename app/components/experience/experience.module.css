@@ -1,0 +1,166 @@
+.timelineContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 16px;
+  gap: 20px;
+}
+
+.header {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.timelineItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-left: 2px solid #ccc;
+  padding-left: 20px;
+  position: relative;
+}
+
+.timelineItem::before {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+}
+
+.period {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.pillButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 16px;
+  border: 2px solid currentColor;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: inherit;
+  transition: opacity 0.3s;
+  margin-top: 4px;
+}
+
+.pillButton:hover {
+  opacity: 0.8;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.points {
+  list-style: disc;
+  margin-left: 16px;
+  font-size: 14px;
+  padding-left: 4px;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .timelineItem {
+    border-left-color: #555;
+  }
+
+  .timelineItem::before {
+    border-color: #555;
+    background-color: #222;
+  }
+
+  .period,
+  .points {
+    color: #ccc;
+  }
+
+  .pillButton {
+    border-color: #ccc;
+    color: #ccc;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .timelineContainer {
+    padding: 16px 12px;
+  }
+
+  .header {
+    font-size: 24px;
+  }
+
+  .timeline {
+    gap: 24px;
+  }
+
+  .timelineItem {
+    padding-left: 16px;
+  }
+
+  .timelineItem::before {
+    left: -7px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .points {
+    font-size: 13px;
+    margin-left: 12px;
+  }
+
+  .pillButton {
+    padding: 5px 14px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 20px;
+  }
+
+  .timelineItem::before {
+    width: 12px;
+    height: 12px;
+    left: -6px;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+
+  .points {
+    font-size: 12px;
+  }
+
+  .pillButton {
+    padding: 4px 12px;
+    font-size: 12px;
+  }
+}
